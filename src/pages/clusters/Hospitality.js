@@ -1,5 +1,6 @@
 import React from 'react';
 import { clusters } from '../../data/info';
+import ClusterResources from '../../components/ClusterResources';
 import './ClusterPage.css';
 
 const Hospitality = () => {
@@ -39,6 +40,9 @@ const Hospitality = () => {
           </div>
         </div>
       </section>
+
+      {/* Resources Section */}
+      <ClusterResources clusterKey="hospitality" clusterName="Hospitality & Tourism" />
     </div>
   );
 };

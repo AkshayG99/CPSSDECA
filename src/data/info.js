@@ -254,10 +254,37 @@ export const memories = [
 ];
 
 export const contact = {
-  email: "cpssdeca@gmail.com",
+  email: "centralpeeldecaa@gmail.com",
   instagram: "@cpss.deca",
   school: "Central Peel Secondary School",
   address: "300 Vodden St E, Brampton, ON L6V 1N2",
   meetingTime: "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
   room: "Room 201"
+};
+
+export const resources = {
+  marketing: {
+    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/marketing/",
+    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/marketing/",
+    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/marketing/",
+    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/marketing/"
+  },
+  finance: {
+    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/finance/",
+    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/finance/",
+    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/finance/",
+    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/finance/"
+  },
+  businessAdmin: {
+    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/business-administration/",
+    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/business-administration/",
+    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/business-administration/",
+    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/business-administration/"
+  },
+  hospitality: {
+    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/hospitality-and-tourism/",
+    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/hospitality-and-tourism/",
+    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/hospitality-and-tourism/",
+    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/hospitality-and-tourism/"
+  }
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { clusters } from '../../data/info';
+import ClusterResources from '../../components/ClusterResources';
 import './ClusterPage.css';
 
 const Finance = () => {
@@ -39,6 +40,9 @@ const Finance = () => {
           </div>
         </div>
       </section>
+
+      {/* Resources Section */}
+      <ClusterResources clusterKey="finance" clusterName="Finance" />
     </div>
   );
 };

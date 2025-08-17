@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 Central Peel DECA. All rights reserved.</p>
+          <p>&copy; 2025 Central Peel DECA. All rights reserved.</p>
         </div>
       </div>
     </footer>

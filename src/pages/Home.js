@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { siteInfo } from '../data/info';
+import { siteInfo, clusters } from '../data/info';
 import './Home.css';
 
 const Home = () => {
