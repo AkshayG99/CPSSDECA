@@ -10,7 +10,8 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/executives', label: 'Executives' },
-    { path: '/memories', label: 'Memories' }
+    { path: '/memories', label: 'Memories' },
+    { path: '/calendar', label: 'Calendar' }
   ];
   
   const clusterItems = [

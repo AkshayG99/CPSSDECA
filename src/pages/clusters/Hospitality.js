@@ -24,17 +24,17 @@ const Hospitality = () => {
           <div className="success-content">
             <div className="success-text">
               <h2 className="section-title">Creating Exceptional Experiences</h2>
-              <p>Our hospitality cluster has produced award-winning event planners and hotel managers. Students gain hands-on experience through partnerships with local businesses.</p>
+              <p>Our hospitality cluster has produced award-winning event planners and hotel managers. Students gain simulated hands-on experience through case studies.</p>
               <p>Many graduates have secured positions at luxury hotels, event management companies, and tourism boards across Canada.</p>
             </div>
             <div className="success-stats">
               <div className="stat-card">
-                <div className="stat-number">20+</div>
-                <div className="stat-label">Industry Partnerships</div>
+                <div className="stat-number">5+</div>
+                <div className="stat-label">Partnered Companies</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">95%</div>
-                <div className="stat-label">Job Placement Rate</div>
+                <div className="stat-number">30+</div>
+                <div className="stat-label">Awards Won</div>
               </div>
             </div>
           </div>

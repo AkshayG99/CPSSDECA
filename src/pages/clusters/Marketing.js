@@ -33,8 +33,8 @@ const Marketing = () => {
                 <div className="stat-label">Provincial Winners</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">3</div>
-                <div className="stat-label">Years Running</div>
+                <div className="stat-number">40+</div>
+                <div className="stat-label">Awards Won</div>
               </div>
             </div>
           </div>

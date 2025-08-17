@@ -29,12 +29,12 @@ const Finance = () => {
             </div>
             <div className="success-stats">
               <div className="stat-card">
-                <div className="stat-number">$2M+</div>
-                <div className="stat-label">Portfolio Value Managed</div>
+                <div className="stat-number">5+</div>
+                <div className="stat-label">Provincial Winners</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">18</div>
-                <div className="stat-label">Finance Scholarships Won</div>
+                <div className="stat-number">20+</div>
+                <div className="stat-label">Awards Won</div>
               </div>
             </div>
           </div>

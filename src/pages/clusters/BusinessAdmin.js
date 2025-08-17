@@ -30,7 +30,7 @@ const BusinessAdmin = () => {
             <div className="success-stats">
               <div className="stat-card">
                 <div className="stat-number">8</div>
-                <div className="stat-label">Student Startups</div>
+                <div className="stat-label">Student Organizations/Startups</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number">12+</div>
