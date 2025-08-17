@@ -1,0 +1,360 @@
+.executives-page {
+  min-height: 100vh;
+}
+
+.team-selection {
+  background: #f8fafc;
+  padding: 2rem 0;
+}
+
+.team-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.team-tab {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.team-tab:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.team-tab.active {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: white;
+}
+
+.executives-section {
+  background: white;
+}
+
+.executives-section:nth-child(even) {
+  background: #f8fafc;
+}
+
+.executives-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-items: center;
+}
+
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cluster-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cluster-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.directors-section,
+.trainers-section {
+  text-align: center;
+}
+
+.subsection-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-blue);
+  margin-bottom: 1rem;
+}
+
+.executive-card {
+  text-align: center;
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1rem;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.executive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
+  border-color: var(--primary-blue);
+}
+
+.president-card {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+  border: none;
+}
+
+.president-card .executive-name {
+  color: white;
+}
+
+.president-card .executive-role {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.president-card:hover {
+  transform: translateY(-5px);
+}
+
+.director-card {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+  border: none;
+}
+
+.director-card .executive-name {
+  color: white;
+}
+
+.director-card .executive-role {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.director-card .image-placeholder {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.director-card .placeholder-icon {
+  color: white;
+}
+
+.director-card:hover {
+  transform: translateY(-5px);
+}
+
+.executive-image {
+  margin-bottom: 0.5rem;
+}
+
+.image-placeholder {
+  width: 100px;
+  height: 100px;
+  background: var(--light-blue);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--primary-blue);
+}
+
+.placeholder-icon {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+}
+
+.president-card .image-placeholder {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.president-card .placeholder-icon {
+  color: white;
+}
+
+.executive-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.executive-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 0.25rem;
+}
+
+.executive-role {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.executive-cluster {
+  font-weight: 500;
+  color: var(--secondary-blue);
+  font-size: 0.9rem;
+  background: var(--light-blue);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.executive-bio {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.section-description {
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-team-section {
+  background: var(--gradient-blue);
+  color: white;
+  padding: 4rem 0;
+}
+
+.join-team-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-team-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Team Hierarchy Visual */
+.team-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.hierarchy-level {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hierarchy-connector {
+  width: 2px;
+  height: 2rem;
+  background: var(--primary-blue);
+  margin: 0 auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-tabs {
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+  
+  .team-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+  
+  .executives-grid {
+    gap: 1.5rem;
+  }
+  
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cluster-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .executive-card {
+    padding: 1.5rem;
+    min-width: 160px;
+    max-width: 200px;
+    width: 100%;
+  }
+  
+  .executive-name {
+    font-size: 1rem;
+  }
+  
+  .executive-role {
+    font-size: 0.8rem;
+  }
+  
+  .president-card {
+    transform: none;
+  }
+  
+  .president-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .subsection-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .executives-grid {
+    gap: 1rem;
+  }
+  
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .executive-card {
+    padding: 1rem;
+    min-width: 140px;
+  }
+  
+  .president-card {
+    transform: none;
+  }
+  
+  .president-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cluster-section {
+    gap: 2rem;
+  }
+}

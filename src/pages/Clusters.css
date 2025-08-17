@@ -1,0 +1,251 @@
+.clusters-page {
+  min-height: 100vh;
+}
+
+.cluster-nav-section {
+  background: #f8fafc;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cluster-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cluster-nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.cluster-nav-btn:hover {
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.1);
+}
+
+.cluster-nav-btn.active {
+  border-color: var(--primary-blue);
+  background: var(--light-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.2);
+}
+
+.cluster-nav-btn .cluster-icon {
+  font-size: 2rem;
+}
+
+.cluster-nav-btn .cluster-name {
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.cluster-details {
+  background: white;
+}
+
+.cluster-header {
+  margin-bottom: 3rem;
+}
+
+.cluster-title-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cluster-large-icon {
+  font-size: 4rem;
+  background: var(--light-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cluster-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.cluster-description {
+  font-size: 1.2rem;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.cluster-info-grid {
+  gap: 2rem;
+}
+
+.info-card {
+  background: #f8fafc;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.info-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list li:before {
+  content: "•";
+  color: var(--primary-blue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resource-item h4 {
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.resource-item p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.all-clusters-section {
+  background: #f8fafc;
+}
+
+.all-clusters-grid {
+  gap: 2rem;
+}
+
+.cluster-overview-card {
+  transition: all 0.3s ease;
+}
+
+.cluster-overview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cluster-overview-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cluster-overview-header .cluster-icon {
+  font-size: 2rem;
+}
+
+.cluster-overview-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+
+.cluster-overview-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.join-cta-section {
+  background: var(--gradient-blue);
+  color: white;
+  padding: 4rem 0;
+}
+
+.join-cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cluster-nav {
+    gap: 0.5rem;
+  }
+  
+  .cluster-nav-btn {
+    min-width: 120px;
+    padding: 1rem 1.5rem;
+  }
+  
+  .cluster-nav-btn .cluster-name {
+    font-size: 0.8rem;
+  }
+  
+  .cluster-title-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .cluster-title {
+    font-size: 2rem;
+  }
+  
+  .cluster-description {
+    font-size: 1rem;
+  }
+  
+  .cluster-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .all-clusters-grid {
+    grid-template-columns: 1fr;
+  }
+}
