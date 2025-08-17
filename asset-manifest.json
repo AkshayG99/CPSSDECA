@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/your-repo-name/static/css/main.d5ca6731.css",
-    "main.js": "/your-repo-name/static/js/main.ed729b0b.js",
-    "static/media/header.png": "/your-repo-name/static/media/header.9d0197d2b1b13878d953.png",
-    "index.html": "/your-repo-name/index.html",
-    "main.d5ca6731.css.map": "/your-repo-name/static/css/main.d5ca6731.css.map",
-    "main.ed729b0b.js.map": "/your-repo-name/static/js/main.ed729b0b.js.map"
+    "main.css": "/CPSSDECA/static/css/main.4bc01306.css",
+    "main.js": "/CPSSDECA/static/js/main.ed729b0b.js",
+    "static/media/header.png": "/CPSSDECA/static/media/header.9d0197d2b1b13878d953.png",
+    "index.html": "/CPSSDECA/index.html",
+    "main.4bc01306.css.map": "/CPSSDECA/static/css/main.4bc01306.css.map",
+    "main.ed729b0b.js.map": "/CPSSDECA/static/js/main.ed729b0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5ca6731.css",
+    "static/css/main.4bc01306.css",
     "static/js/main.ed729b0b.js"
   ]
 }
