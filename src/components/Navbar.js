@@ -5,7 +5,18 @@ import './Navbar.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [clustersOpen, setClustersOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 992);
   const location = useLocation();
+
+  // Handle window resize for mobile view detection
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 992);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -25,12 +36,41 @@ const Navbar = () => {
   const isActive = (path) => {
     const currentPath = window.location.pathname;
     const basePath = '/CPSSDECA';
-    // Handle both with and without base path
+    
+    // If we're checking a cluster path
+    if (path === '/clusters') {
+      return currentPath.includes('/clusters/') || 
+             currentPath.endsWith('/clusters') ||
+             currentPath.includes(`${basePath}/clusters/`) ||
+             currentPath.endsWith(`${basePath}/clusters`);
+    }
+    
+    // For all other paths
     return currentPath === path || 
            currentPath === `${path}/` ||
-           currentPath === `${basePath}${path}` ||
-           currentPath === `${basePath}${path}/`;
+           (basePath && (currentPath === `${basePath}${path}` || 
+                         currentPath === `${basePath}${path}/`));
   };
+
+  // Close dropdown when clicking outside or when route changes
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (clustersOpen && !event.target.closest('.nav-dropdown')) {
+        setClustersOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [clustersOpen]);
+
+  // Close dropdown when route changes
+  React.useEffect(() => {
+    setClustersOpen(false);
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
     <nav className="navbar">
@@ -47,7 +87,10 @@ const Navbar = () => {
                 key={item.path}
                 to={item.path}
                 className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  setClustersOpen(false);
+                }}
               >
                 {item.label}
               </Link>
@@ -55,13 +98,22 @@ const Navbar = () => {
             
             <div 
               className={`nav-dropdown ${clustersOpen ? 'dropdown-open' : ''}`}
-              onMouseEnter={() => setClustersOpen(true)}
-              onMouseLeave={() => setClustersOpen(false)}
+              onMouseEnter={() => !isMobileView && setClustersOpen(true)}
+              onMouseLeave={() => !isMobileView && setClustersOpen(false)}
             >
-              <span className={`nav-link dropdown-trigger ${location.pathname.startsWith('/clusters') ? 'active' : ''}`}>
+              <button 
+                className={`nav-link dropdown-trigger ${isActive('/clusters') ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setClustersOpen(prev => !prev);
+                }}
+                aria-expanded={clustersOpen}
+                aria-haspopup="true"
+              >
                 Clusters
                 <span className="dropdown-arrow">▼</span>
-              </span>
+              </button>
               <div className="dropdown-menu">
                 {clusterItems.map((item) => (
                   <Link
