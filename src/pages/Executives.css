@@ -73,9 +73,27 @@
 .cluster-row {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.presidents-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.presidents-grid .executive-card {
+  flex: 0 0 calc(33.333% - 2rem);
+  max-width: 300px;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
 }
 
 .directors-section,
@@ -271,22 +289,43 @@
 
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .presidents-grid .executive-card {
+    flex: 0 0 calc(50% - 2rem);
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .team-tabs {
     gap: 0.5rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .team-tabs::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .team-tabs::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 2px;
   }
   
   .team-tab {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     font-size: 0.8rem;
-    flex: 1;
-    min-width: 80px;
-    text-align: center;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    min-width: auto;
   }
   
   .executives-grid {
     gap: 1.5rem;
+    padding: 0 1rem;
   }
   
   .grid-2 {
@@ -298,16 +337,26 @@
   }
   
   .cluster-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .presidents-grid {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .presidents-grid .executive-card {
+    flex: 0 0 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
   
   .executive-card {
     padding: 1.5rem;
-    min-width: 160px;
-    max-width: 200px;
     width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
   
   .executive-name {
@@ -332,29 +381,50 @@
 }
 
 @media (max-width: 480px) {
+  .team-tab {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
   .executives-grid {
-    gap: 1rem;
+    gap: 1.25rem;
+    padding: 0 0.5rem;
   }
   
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .presidents-grid {
+    gap: 1.25rem;
+    padding: 0 0.5rem;
+  }
+  
+  .cluster-row {
+    gap: 1.25rem;
+    padding: 0 0.5rem;
   }
   
   .executive-card {
-    padding: 1rem;
-    min-width: 140px;
+    padding: 1.25rem;
+    width: 100%;
+    max-width: 260px;
   }
   
-  .president-card {
+  .president-card,
+  .director-card {
     transform: none;
   }
   
-  .president-card:hover {
+  .president-card:hover,
+  .director-card:hover {
     transform: translateY(-5px);
   }
   
   .cluster-section {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }

@@ -3,7 +3,7 @@ import { executives } from '../data/info';
 import './Executives.css';
 
 const Executives = () => {
-  const [selectedTeam, setSelectedTeam] = useState('all');
+  const [selectedTeam, setSelectedTeam] = useState('presidents');
 
   const renderExecutiveCard = (executive, isPresident = false, isDirector = false) => (
     <div key={executive.name} className={`executive-card ${isPresident ? 'president-card' : ''} ${isDirector ? 'director-card' : ''}`}>
@@ -49,16 +49,10 @@ const Executives = () => {
         <div className="container">
           <div className="team-tabs">
             <button 
-              className={`team-tab ${selectedTeam === 'all' ? 'active' : ''}`}
-              onClick={() => setSelectedTeam('all')}
+              className={`team-tab ${selectedTeam === 'presidents' ? 'active' : ''}`}
+              onClick={() => setSelectedTeam('presidents')}
             >
-              All Teams
-            </button>
-            <button 
-              className={`team-tab ${selectedTeam === 'leadership' ? 'active' : ''}`}
-              onClick={() => setSelectedTeam('leadership')}
-            >
-              Leadership
+              Presidents
             </button>
             <button 
               className={`team-tab ${selectedTeam === 'core' ? 'active' : ''}`}
@@ -95,11 +89,11 @@ const Executives = () => {
       </section>
 
       {/* Dynamic Content Based on Selection */}
-      {(selectedTeam === 'all' || selectedTeam === 'leadership') && (
+      {(selectedTeam === 'presidents') && (
         <section className="executives-section section-padding">
           <div className="container">
-            <h2 className="section-title text-center">Leadership</h2>
-            <div className="cluster-row">
+            <h2 className="section-title text-center">Presidents</h2>
+            <div className="presidents-grid">
               {executives.presidents.map(president => renderExecutiveCard(president, true))}
             </div>
           </div>

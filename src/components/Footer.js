@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-left">
-            <img src="/deca-logo.png" alt="DECA Logo" className="footer-logo-img" />
+            <img src={`${process.env.PUBLIC_URL}/deca-logo.png`} alt="DECA Logo" className="footer-logo-img" />
             <h3 className="footer-title">CPSS DECA</h3>
           </div>
           <div className="footer-right">

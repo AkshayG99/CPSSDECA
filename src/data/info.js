@@ -204,51 +204,51 @@ export const testimonials = [
     name: "Amnoor Dhaliwal",
     grade: "Grade 11",
     quote: "DECA has given me incredible opportunities to develop my business skills and connect with like-minded peers. The competitions have challenged me to think critically and present confidently.",
-    image: "/images/testimonials/amnoor.jpg"
+    image: `/images/testimonials/amnoor.jpg`
   },
   {
     name: "Aswin Sivakumar",
     grade: "Grade 10",
     quote: "Joining DECA was one of the best decisions I made in high school. The workshops and events have prepared me for my future career in business.",
-    image: "/images/testimonials/aswin.jpg"
+    image: `/images/testimonials/aswin.jpg`
   },
   {
     name: "Anonymous Student",
     grade: "Grade 9",
     quote: "DECA welcomed me with open arms and helped me discover my passion for entrepreneurship. The supportive community makes learning fun and engaging.",
-    image: "/images/testimonials/anonymous.jpg"
+    image: `/images/testimonials/anonymous.jpg`
   }
 ];
 
 export const memories = [
   {
     title: "DECA Provincials 2024",
-    image: "/images/memories/provincials2024.jpg",
+    image: `/images/memories/provincials2024.jpg`,
     description: "Our team competing at the provincial level"
   },
   {
     title: "Business Workshop",
-    image: "/images/memories/workshop.jpg",
+    image: `/images/memories/workshop.jpg`,
     description: "Interactive learning session with industry professionals"
   },
   {
     title: "Team Building Event",
-    image: "/images/memories/teambuilding.jpg",
+    image: `/images/memories/teambuilding.jpg`,
     description: "Building stronger connections within our DECA family"
   },
   {
     title: "Awards Ceremony",
-    image: "/images/memories/awards.jpg",
+    image: `/images/memories/awards.jpg`,
     description: "Celebrating our members' achievements"
   },
   {
     title: "Networking Event",
-    image: "/images/memories/networking.jpg",
+    image: `/images/memories/networking.jpg`,
     description: "Connecting with business leaders and alumni"
   },
   {
     title: "Competition Prep",
-    image: "/images/memories/prep.jpg",
+    image: `/images/memories/prep.jpg`,
     description: "Intensive preparation sessions for upcoming competitions"
   }
 ];

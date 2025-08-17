@@ -12,7 +12,7 @@ const Navbar = () => {
     { path: '/executives', label: 'Executives' },
     { path: '/memories', label: 'Memories' }
   ];
-
+  
   const clusterItems = [
     { path: '/clusters/marketing', label: 'Marketing' },
     { path: '/clusters/business-admin', label: 'Business Admin' },
@@ -20,12 +20,23 @@ const Navbar = () => {
     { path: '/clusters/finance', label: 'Finance' }
   ];
 
+  // Helper function to determine active link
+  const isActive = (path) => {
+    const currentPath = window.location.pathname;
+    const basePath = '/CPSSDECA';
+    // Handle both with and without base path
+    return currentPath === path || 
+           currentPath === `${path}/` ||
+           currentPath === `${basePath}${path}` ||
+           currentPath === `${basePath}${path}/`;
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
         <div className="nav-content">
           <Link to="/" className="nav-logo">
-            <img src="/deca-logo.png" alt="DECA Logo" className="logo-image" />
+            <img src={`${process.env.PUBLIC_URL}/deca-logo.png`} alt="DECA Logo" className="logo-image" />
             <span className="logo-text">CPSS DECA</span>
           </Link>
           
@@ -34,7 +45,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
@@ -47,7 +58,8 @@ const Navbar = () => {
               onMouseLeave={() => setClustersOpen(false)}
             >
               <span className={`nav-link dropdown-trigger ${location.pathname.startsWith('/clusters') ? 'active' : ''}`}>
-                Clusters ▼
+                Clusters
+                <span className="dropdown-arrow">▼</span>
               </span>
               <div className="dropdown-menu">
                 {clusterItems.map((item) => (
@@ -55,7 +67,10 @@ const Navbar = () => {
                     key={item.path}
                     to={item.path}
                     className={`dropdown-item ${location.pathname === item.path ? 'active' : ''}`}
-                    onClick={() => { setIsOpen(false); setClustersOpen(false); }}
+                    onClick={() => { 
+                      setIsOpen(false); 
+                      setClustersOpen(false); 
+                    }}
                   >
                     {item.label}
                   </Link>

@@ -34,7 +34,7 @@ const Home = () => {
               </p>
             </div>
             <div className="about-image slide-in-right">
-              <img src="/team.png" alt="CPSS DECA Team" className="team-photo" />
+              <img src={`${process.env.PUBLIC_URL}/team.png`} alt="CPSS DECA Team" className="team-photo" />
             </div>
           </div>
         </div>
@@ -46,22 +46,22 @@ const Home = () => {
           <h2 className="section-title text-center">Four Paths to Success</h2>
           <div className="clusters-grid grid grid-4">
             <Link to="/clusters/marketing" className="cluster-card card stagger-item">
-              <img src="/marketing-logo.webp" alt="Marketing" className="cluster-logo" />
+              <img src={`${process.env.PUBLIC_URL}/marketing-logo.webp`} alt="Marketing" className="cluster-logo" />
               <h3>Marketing</h3>
               <p>Digital campaigns & brand strategy</p>
             </Link>
             <Link to="/clusters/business-admin" className="cluster-card card stagger-item">
-              <img src="/business-admin-logo.webp" alt="Business Admin" className="cluster-logo" />
+              <img src={`${process.env.PUBLIC_URL}/business-admin-logo.webp`} alt="Business Admin" className="cluster-logo" />
               <h3>Business Admin</h3>
               <p>Leadership & entrepreneurship</p>
             </Link>
             <Link to="/clusters/hospitality" className="cluster-card card stagger-item">
-              <img src="/hospitality-logo.webp" alt="Hospitality" className="cluster-logo" />
+              <img src={`${process.env.PUBLIC_URL}/hospitality-logo.webp`} alt="Hospitality" className="cluster-logo" />
               <h3>Hospitality</h3>
               <p>Events & customer experience</p>
             </Link>
             <Link to="/clusters/finance" className="cluster-card card stagger-item">
-              <img src="/finance-logo.webp" alt="Finance" className="cluster-logo" />
+              <img src={`${process.env.PUBLIC_URL}/finance-logo.webp`} alt="Finance" className="cluster-logo" />
               <h3>Finance</h3>
               <p>Investment & financial planning</p>
             </Link>

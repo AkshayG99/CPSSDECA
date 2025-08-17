@@ -25,7 +25,7 @@ const Memories = () => {
 
     const memoriesData = imageFilenames.map((filename, index) => ({
       title: `DECA Memory ${index + 1}`,
-      image: `/memories-photos/${filename}`,
+      image: `${process.env.PUBLIC_URL}/memories-photos/${filename}`,
       description: "CPSS DECA memories"
     }));
 
