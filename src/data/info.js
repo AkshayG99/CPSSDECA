@@ -264,27 +264,27 @@ export const contact = {
 
 export const resources = {
   marketing: {
-    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/marketing/",
-    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/marketing/",
-    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/marketing/",
-    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/marketing/"
+    sampleCases: "https://drive.google.com/drive/u/1/folders/1hOe0xm0yVqoP95CdxuyfJ5Wzs7IefIUf",
+    performanceIndicators: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/639a9ef041be243a79771b23_HS_Performance_Indicators_Marketing.pdf",
+    instructionalAreas: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/65033388550914be032e199d_DECA_HS_Instructional_Areas_2023-2024.pdf",
+    practiceExams: "https://drive.google.com/drive/u/1/folders/1PNhLH1dszHq1a08IKuLwYYG5b3S4eqVq"
   },
   finance: {
-    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/finance/",
-    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/finance/",
-    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/finance/",
-    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/finance/"
+    sampleCases: "https://drive.google.com/drive/u/1/folders/1JeD929fCVVY4cvCMx5PeNcOSkJyC8S5a",
+    performanceIndicators: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/651c620c61fdcb9b24b114c1_HS_Performance_Indicators_Finance.pdf",
+    instructionalAreas: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/65033388550914be032e199d_DECA_HS_Instructional_Areas_2023-2024.pdf",
+    practiceExams: "https://drive.google.com/drive/u/1/folders/1t1kBZNc_LH0hSLIiMlsZgbhkr_swaQR0"
   },
   businessAdmin: {
-    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/business-administration/",
-    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/business-administration/",
-    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/business-administration/",
-    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/business-administration/"
+    sampleCases: "https://drive.google.com/drive/u/1/folders/1gMXgmj3RYRilpC_cdyHfcivUftnf4Abx",
+    performanceIndicators: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/639a9c1191e1c3350189654a_HS_Performance_Indicators_Business_Admin_Core.pdf",
+    instructionalAreas: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/65033388550914be032e199d_DECA_HS_Instructional_Areas_2023-2024.pdf",
+    practiceExams: "https://drive.google.com/drive/u/1/folders/1zne5yKDwtlS92ahiQf8Dpn_I04a3rVf_"
   },
   hospitality: {
-    sampleCases: "https://www.deca.org/high-school-programs/high-school-competitive-events/sample-competitive-events/hospitality-and-tourism/",
-    performanceIndicators: "https://www.deca.org/high-school-programs/high-school-competitive-events/performance-indicators/hospitality-and-tourism/",
-    instructionalAreas: "https://www.deca.org/high-school-programs/high-school-competitive-events/instructional-areas/hospitality-and-tourism/",
-    practiceExams: "https://www.deca.org/high-school-programs/high-school-competitive-events/practice-exams/hospitality-and-tourism/"
+    sampleCases: "https://drive.google.com/drive/u/1/folders/1d96tajk9v1M4AEhPIvOADv4lLRP1YFJB",
+    performanceIndicators: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/639a9f44bd5b5cd73a758651_HS_Performance_Indicators_Hospitality.pdf",
+    instructionalAreas: "https://assets-global.website-files.com/635c470cc81318fc3e9c1e0e/65033388550914be032e199d_DECA_HS_Instructional_Areas_2023-2024.pdf",
+    practiceExams: "https://drive.google.com/drive/u/1/folders/177btH5FldesYqDTQj_GRPszrGst4JUBj"
   }
 };
