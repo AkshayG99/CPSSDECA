@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Get the current path and redirect to index.html with the path
+      const path = window.location.pathname.replace('/CPSSDECA', '');
+      const search = window.location.search;
+      const hash = window.location.hash;
+      const url = '/CPSSDECA/index.html' + path + search + hash;
+      window.history.replaceState({}, '', url);
+      window.location.replace(url);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting... <a href="/CPSSDECA">Click here if not redirected</a></p>
+  </body>
+</html>

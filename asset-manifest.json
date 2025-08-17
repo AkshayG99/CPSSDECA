@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.95bf2409.css",
-    "main.js": "./static/js/main.de82d3b3.js",
-    "static/media/header.png": "./static/media/header.9d0197d2b1b13878d953.png",
-    "index.html": "./index.html",
-    "main.95bf2409.css.map": "./static/css/main.95bf2409.css.map",
-    "main.de82d3b3.js.map": "./static/js/main.de82d3b3.js.map"
+    "main.css": "/CPSSDECA/static/css/main.6526004c.css",
+    "main.js": "/CPSSDECA/static/js/main.de82d3b3.js",
+    "static/media/header.png": "/CPSSDECA/static/media/header.9d0197d2b1b13878d953.png",
+    "index.html": "/CPSSDECA/index.html",
+    "main.6526004c.css.map": "/CPSSDECA/static/css/main.6526004c.css.map",
+    "main.de82d3b3.js.map": "/CPSSDECA/static/js/main.de82d3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.95bf2409.css",
+    "static/css/main.6526004c.css",
     "static/js/main.de82d3b3.js"
   ]
 }
