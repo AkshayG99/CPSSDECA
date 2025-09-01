@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CPSS DECA</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      (function() {
+        // Redirect to index.html for all 404s
+        var path = window.location.pathname;
+        var is404 = path.split('/').pop() === '404.html';
+        
+        if (is404) {
+          var newPath = path.replace(/404\.html$/, '');
+          window.history.replaceState({}, '', newPath);
+        }
+        
+        // Redirect to index.html which will handle the routing
+        var indexPath = '/CPSSDECA/index.html';
+        if (window.location.pathname !== indexPath) {
+          var newUrl = indexPath + window.location.pathname.replace('/CPSSDECA', '') + window.location.search + window.location.hash;
+          window.history.replaceState({}, '', newUrl);
+          window.location.replace(newUrl);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Loading CPSS DECA... <a href="/CPSSDECA">Click here if not redirected</a></p>
+  </body>
+</html>

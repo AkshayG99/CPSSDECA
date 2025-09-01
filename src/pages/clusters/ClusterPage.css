@@ -1,0 +1,232 @@
+.cluster-page {
+  min-height: 100vh;
+}
+
+.cluster-hero {
+  background: var(--gradient-blue);
+  color: white;
+  padding: 2.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cluster-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
+  background-size: cover;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cluster-logo {
+  flex-shrink: 0;
+}
+
+.cluster-logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.cluster-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.cluster-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 800px;
+}
+
+.focus-section {
+  background: white;
+}
+
+.focus-grid {
+  gap: 2rem;
+}
+
+.focus-card {
+  text-align: center;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.focus-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(30, 64, 175, 0.15);
+}
+
+.focus-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.focus-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.competitions-section {
+  background: #f8fafc;
+}
+
+.competitions-grid {
+  gap: 2rem;
+}
+
+.competition-card {
+  text-align: center;
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.competition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-blue);
+}
+
+.competition-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.competition-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.competition-card p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.success-section {
+  background: white;
+}
+
+.success-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.success-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.success-text p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.success-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  background: var(--light-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--primary-blue);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #4b5563;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cluster-hero {
+    padding: 1rem 0;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .cluster-logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .cluster-title {
+    font-size: 2rem;
+  }
+  
+  .cluster-description {
+    font-size: 1.1rem;
+  }
+  
+  .focus-grid,
+  .competitions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .success-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .success-stats {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .stat-card {
+    flex: 1;
+    max-width: 150px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
