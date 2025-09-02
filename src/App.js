@@ -15,7 +15,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/CPSSDECA">
+    <Router>
       <div className="App">
         <Navbar />
         <main>
