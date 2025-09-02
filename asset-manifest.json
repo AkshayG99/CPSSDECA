@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CPSSDECA/static/css/main.5e9f653f.css",
-    "main.js": "/CPSSDECA/static/js/main.8466f82e.js",
-    "static/media/header.png": "/CPSSDECA/static/media/header.9d0197d2b1b13878d953.png",
-    "index.html": "/CPSSDECA/index.html",
-    "static/media/en-US.cjs": "/CPSSDECA/static/media/en-US.c3a6319ea4f219498e6f.cjs",
-    "main.5e9f653f.css.map": "/CPSSDECA/static/css/main.5e9f653f.css.map",
-    "main.8466f82e.js.map": "/CPSSDECA/static/js/main.8466f82e.js.map"
+    "main.css": "./static/css/main.aba9b7e1.css",
+    "main.js": "./static/js/main.a13aaef2.js",
+    "static/media/header.png": "./static/media/header.9d0197d2b1b13878d953.png",
+    "index.html": "./index.html",
+    "static/media/en-US.cjs": "./static/media/en-US.c3a6319ea4f219498e6f.cjs",
+    "main.aba9b7e1.css.map": "./static/css/main.aba9b7e1.css.map",
+    "main.a13aaef2.js.map": "./static/js/main.a13aaef2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e9f653f.css",
-    "static/js/main.8466f82e.js"
+    "static/css/main.aba9b7e1.css",
+    "static/js/main.a13aaef2.js"
   ]
 }
